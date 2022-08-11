@@ -56,19 +56,25 @@ body {
   background-color: rgb(216, 216, 216);
 }
 
-.btn-custom:active,.btn-custom ,.btn-custom:focus-visible ,.btn-custom:focus {
+.btn-custom:active,
+.btn-custom,
+.btn-custom:focus-visible,
+.btn-custom:focus {
   border: #ed0c72 !important;
   background-color: #ed0c72;
   color: white;
 }
-.btn-custom:hover{
+
+.btn-custom:hover {
   background-color: #fa56a0;
   color: white;
 }
-.bg-custom{
+
+.bg-custom {
   background-color: #fa56a0;
   color: white;
 }
+
 /* end of general classed */
 
 
@@ -104,16 +110,20 @@ body {
 .boxShadowd {
   box-shadow: 0px 5px 10px -6px gray;
 }
-.carousel-indicators [data-bs-target]{
-  width: 10px  !important;
+
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
   height: 10px !important;
   border-radius: 50%;
- 
+
 }
-.carousel-indicators .active{
+
+.carousel-indicators .active {
   background-color: #ed0c72;
 }
-.carousel-control-prev, .carousel-control-next{
+
+.carousel-control-prev,
+.carousel-control-next {
   height: 50px !important;
   width: 50px !important;
   transform: translateY(-50%);
@@ -122,7 +132,8 @@ body {
   opacity: 1 !important;
 
 }
-.customBorder{
+
+.customBorder {
   height: 25px;
   width: 25px;
   border: 2px solid white;
@@ -182,9 +193,31 @@ body {
 }
 
 /* clock */
-.flip-clock-label{
+.flip-clock-label {
   display: none;
 }
-.flip-clock-wrapper ul:nth-child(even){
+
+.flip-clock-wrapper ul:nth-child(even) {
   border-radius: 10px 0 0 10px;
+}
+
+.flip-clock-wrapper ul li a div div.inn,
+.flip-clock-dot {
+  background-color: #ed0c72;
+  box-shadow: none;
+  color: white;
+}
+
+.flip-clock-wrapper .flip {
+  box-shadow: none;
+  font-family: 'Emirates';
+
+}
+
+.flip-clock-wrapper ul {
+  background: #ed0c72;
+}
+
+.flip-clock-dot {
+  border-radius: 0px !important;
 }
