@@ -75,6 +75,9 @@ body {
   width: 200px ;
   top: -16px;
 }
+.boxShadow{
+   box-shadow: 0 -5px 10px -6px gray;
+}
 
 
 /* ============== WELCOME PAGE STYLES ================= */
