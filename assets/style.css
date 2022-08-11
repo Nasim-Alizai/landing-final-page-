@@ -1,23 +1,46 @@
-:root{
+:root {
   --diameter: 80px;
 }
-html{
+
+@font-face {
+  font-family: 'Emirates';
+  src: url('../Fonts/Emirates\ Medium.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Emirates';
+  src: url('../Fonts/Emirates-Bold.ttf');
+  font-weight: bold;
+
+}
+
+html {
   margin: 0;
   padding: 0;
 }
-.container{
+
+body {
+  font-family: 'Emirates';
+}
+
+.container {
   max-width: 720px !important;
 }
-.landing{
+
+.landing {
   height: 450px !important;
   background-image: url(../images/Untitled.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
 }
-.cardWH{
-  height: 100px;
+
+.cardWH {
+  height: 116px;
   width: 100px;
-  right:calc(50% - var(--diameter)/2);
+  right: calc(50% - var(--diameter)/2);
+  border-radius: 6px;
+  bottom: -50px;
 }
