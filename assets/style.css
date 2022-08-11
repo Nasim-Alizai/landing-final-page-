@@ -54,7 +54,7 @@ body {
 
 
 .landing {
-  height: 450px !important;
+  height: 400px !important;
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
