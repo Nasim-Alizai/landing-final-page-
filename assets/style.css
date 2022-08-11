@@ -29,6 +29,9 @@ body {
 .primary{
   color: #ed0c72 !important;
 }
+.bg-primary{
+  background-color: #ed0c72 !important;
+}
 .pt-6{
   padding-top: 60px;
 }
