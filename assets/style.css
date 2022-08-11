@@ -180,3 +180,11 @@ body {
 .image {
   width: 90%;
 }
+
+/* clock */
+.flip-clock-label{
+  display: none;
+}
+.flip-clock-wrapper ul:nth-child(even){
+  border-radius: 10px 0 0 10px;
+}
