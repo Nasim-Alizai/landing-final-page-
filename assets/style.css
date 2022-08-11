@@ -56,6 +56,15 @@ body {
   background-color: rgb(216, 216, 216);
 }
 
+.btn-custom:active,.btn-custom ,.btn-custom:focus-visible ,.btn-custom:focus {
+  border: #ed0c72 !important;
+  background-color: #ed0c72;
+  color: white;
+}
+.btn-custom:hover{
+  background-color: #fa56a0;
+  color: white;
+}
 /* end of general classed */
 
 
