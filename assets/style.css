@@ -90,9 +90,6 @@ body {
   font-size: 2.5rem;
 }
 
-.background-primary{
-  background-color: #ed0c72;
-}
 .btn-home{
   width: 55%;
   font-size: 2.5rem;
@@ -119,4 +116,48 @@ body {
 
 .image{
   width: 90%;
+}
+
+/* for mobile */
+@media (max-width: 480px) {
+  .thank-you{
+    font-size: 4rem;
+    margin-top: 80px;
+  }
+  .logo{
+    width: 100px;
+    margin-top: 120px;
+  }
+  .order-done{
+    font-size: 1.3rem;
+  }
+
+  .btn-home{
+    width: 70%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .landing_home{
+    background-image: url('../images/background1.svg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+  
+  .icon{
+    width: 15px;
+  }
+  
+  .footer{
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .image{
+    width: 90%;
+    margin-top: 20px;
+  }
 }
