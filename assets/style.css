@@ -91,7 +91,33 @@ body {
 .boxShadowd {
   box-shadow: 0px 5px 10px -6px gray;
 }
+.carousel-indicators [data-bs-target]{
+  width: 10px  !important;
+  height: 10px !important;
+  border-radius: 50%;
+ 
+}
+.carousel-indicators .active{
+  background-color: #ed0c72;
+}
+.carousel-control-prev, .carousel-control-next{
+  height: 50px !important;
+  width: 50px !important;
+  transform: translateY(-50%);
+  top: 50% !important;
+  bottom: unset;
+  opacity: 1 !important;
 
+}
+.customBorder{
+  height: 25px;
+  width: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ============== WELCOME PAGE STYLES ================= */
 .thank-you {
