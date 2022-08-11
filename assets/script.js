@@ -1,3 +1,5 @@
-$("#flipcountdownbox1").flipcountdown({
-  size:"lg"
+$(document).ready(function () {
+	$("#flipcountdownbox1").flipcountdown({
+		size: "lg",
+	});
 });
