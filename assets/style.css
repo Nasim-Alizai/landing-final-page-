@@ -24,6 +24,7 @@ html {
 
 body {
   font-family: 'Emirates';
+  font-size: 12px ;
 }
 .primary{
   color: #ed0c72 !important;
@@ -40,7 +41,9 @@ body {
 .font-size-5{
   font-size: 45px ;
 }
-
+.bg-gray{
+  background-color: rgb(216, 216, 216);
+}
 
 /* end of general classed */
 
