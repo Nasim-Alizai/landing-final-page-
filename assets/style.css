@@ -2,6 +2,7 @@
 
 :root {
   --diameter: 80px;
+  --diameter2: 200px;
 }
 
 @font-face {
@@ -67,4 +68,10 @@ body {
   right: calc(50% - var(--diameter)/2);
   border-radius: 6px;
   bottom: -50px;
+}
+.WH{
+  left: calc(50% - var(--diameter2)/2);
+  color: white;
+  width: 200px ;
+  top: -16px;
 }
