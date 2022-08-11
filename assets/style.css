@@ -37,6 +37,9 @@ body {
 .font-bold{
   font-weight: bold !important ; 
 }
+.font-size-5{
+  font-size: 45px ;
+}
 
 
 /* end of general classed */
