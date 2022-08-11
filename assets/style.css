@@ -1,3 +1,6 @@
+:root{
+  --diameter: 80px;
+}
 html{
   margin: 0;
   padding: 0;
@@ -11,4 +14,10 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+}
+.cardWH{
+  height: 100px;
+  width: 100px;
+  right:calc(50% - var(--diameter)/2);
 }
