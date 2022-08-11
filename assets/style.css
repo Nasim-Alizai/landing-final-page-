@@ -1,3 +1,5 @@
+/* general classed */
+
 :root {
   --diameter: 80px;
 }
@@ -26,10 +28,16 @@ body {
 .primary{
   color: #ed0c72 !important;
 }
+.pt-6{
 
+}
 .container {
   max-width: 720px !important;
 }
+
+/* end of general classed */
+
+
 
 .landing {
   height: 450px !important;
