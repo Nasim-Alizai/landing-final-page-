@@ -1,0 +1,14 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  max-width: 720px !important;
+}
+.landing{
+  height: 450px !important;
+  background-image: url(../images/Untitled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
