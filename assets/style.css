@@ -23,6 +23,9 @@ html {
 body {
   font-family: 'Emirates';
 }
+.primary{
+  color: #ed0c72 !important;
+}
 
 .container {
   max-width: 720px !important;
