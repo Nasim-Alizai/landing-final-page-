@@ -29,7 +29,7 @@ body {
   color: #ed0c72 !important;
 }
 .pt-6{
-
+  padding-top: 60px;
 }
 .container {
   max-width: 720px !important;
