@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>landing</title>
+		<title>Landing</title>
 		<!-- bootstrap cdn -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./compiled/flipclock.css" />
+		<link rel="stylesheet" href="./compiled/style.css" />
 
 		<!-- custom CSS & JS -->
 
@@ -23,59 +23,75 @@
 
 	<body class="bg-white">
 		<div class="container shadow-sm px-0">
-			<section id="langing_home">
-				<div class="landing border-bottom border-danger position-relative">
-					<div class="card cardWH position-absolute shadow-sm">
+			<section id="landing_home">
+				<div class="landing border-bottom position-relative">
+					<div class="card cardWH position-absolute shadowCustom">
 						<div class="card-body px-0 py-0 d-flex justify-content-center align-items-center">
-							<img src="./images/logo1.png" alt="logo" width="70px" />
+							<img src="./images/logo1.png" alt="logo" class="logoImg" />
 						</div>
 					</div>
 				</div>
-				<div class="d-flex justify-content-center pt-6">
-
-					<h1 class="primary font-bold font-size-5 mb-0">Allmst Almalakia Bag</h1>
+				<div class="d-flex justify-content-center pt-5">
+					<h2 class="primary font-bold font-size-5 mb-0">Allmst Almalakia Bag</h2>
 				</div>
-				<hr class="mx-5" />
-				<div class="d-flex justify-content-center">
-					<h1 class="primary">Free Delivery</h1>
+				<hr class="mx-5 mb-2" />
+				<div class="d-flex justify-content-center pb-3">
+					<h2 class="primary fs-2">Free Delivery</h2>
 				</div>
-
-				<div class="bg-gray position-relative d-flex justify-content-between p-3 mt-5">
-					<p class="primary mb-0">Online People : <span class="font-bold fs-6">0872</span></p>
-
-					<div class="card position-absolute WH bg-primary">
+				<div class="position-relative">
+					<div
+						class="discount-cart-wraper bg-gray mt-4 d-flex justify-content-between align-items-center px-2"
+					>
+						<p class="primary mb-0" style="font-size: 10px">
+							Online People: <span class="font-bold" style="font-size: 12px">0872</span>
+						</p>
+						<p class="primary mb-0" style="font-size: 10px">
+							Submited People: <span class="font-bold" style="font-size: 12px">5047</span>
+						</p>
+					</div>
+					<div class="card position-absolute discount-cart bg-primary">
 						<div
 							class="card-body px-0 py-0 d-flex justify-content-center flex-column align-items-center"
 						>
-							<p class="mb-0 fs-1 font-bold"><span class="">179 </span> AED</p>
-							<div class="d-flex justify-content-around w-100 mb-1">
-								<span class="badge rounded-pill bg-custom mt-1 h-50">
-									<p class="mb-0"><span class="">%50 - </span>off</p>
-								</span>
-								<p class="mb-0 text-decoration-line-through fs-6"><span class="">358</span> AED</p>
+							<p class="pricing-1"><span class="">179 </span> AED</p>
+							<div class="d-flex justify-content-around align-items-center w-100">
+								<p class="mb-0 discount-badge bg-custom"><span class="">%50 - </span>off</p>
+								<p class="pricing-2"><span class="">358</span> AED</p>
 							</div>
 						</div>
 					</div>
-					<p class="primary mb-0">Submited People : <span class="font-bold fs-6">5047</span></p>
 				</div>
-				<div class="clock" style="margin: 2em"></div>
+
+				<!-- data-datetime="YEAR-MONTH-DAY HOUR:MIN:SEC" -->
+				<div
+				style="color: white !important ;"
+				class="flipper mt-3"
+				data-reverse="true"
+				data-datetime="2022-08-01 00:00:00"
+				data-template="dd|HH|ii|ss"
+				data-labels="Days|Hours|Minutes|Seconds"
+				id="myFlipper"
+				></div>
 				<div class="message"></div>
 			</section>
 			<section class="boxShadowd">
-				<div class="bg-gray mt-2 text-center p-1 boxShadow">
+				<div
+					class="bg-gray mt-2 text-center p-1"
+					style="box-shadow: 0 -0.275rem 0.25rem rgba(0, 0, 0, 0.2) !important"
+				>
 					<h2 class="font-bold mb-0">General Information</h2>
 				</div>
 
-				<div class="bg-white px-5 pt-4 pb-3">
-					<div class="mb-3">
+				<div class="bg-white pb-5 px-3">
+					<div style="margin-top: 40px">
 						<label for="name" class="form-label mb-0 font-bold fs-6">Full Name</label>
 						<input type="text" class="form-control" id="name" placeholder="Nasim Alizai" />
 					</div>
-					<div class="mb-3">
+					<div style="margin-top: 40px">
 						<label for="location" class="form-label mb-0 font-bold fs-6">Region</label>
 						<input type="text" class="form-control" id="location" placeholder="Dubai" />
 					</div>
-					<div class="mb-3">
+					<div style="margin-top: 40px">
 						<label for="address" class="form-label mb-0 font-bold fs-6">Address</label>
 						<input
 							type="text"
@@ -84,14 +100,15 @@
 							placeholder="Apartment, suite, unit, building"
 						/>
 					</div>
-					<div class="mb-3">
+					<div style="margin-top: 40px">
 						<label for="phone" class="form-label mb-0 font-bold fs-6">Phone</label>
 						<input type="text" class="form-control" id="phone" placeholder="0501234567" />
 					</div>
 				</div>
+				<!-- dddd -->
 			</section>
 			<section class="mt-5">
-				<div class="mb-3 px-5">
+				<div class="mb-3 px-3">
 					<h2 class="font-bold fs-4">Product Information</h2>
 					<span class="text-muted">
 						<p class="fs-5 mb-0">Al Maali VIP Group</p>
@@ -102,7 +119,7 @@
 					</span>
 				</div>
 
-				<div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+				<div id="carouselExampleIndicators" class="carousel slide mb-50" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button
 							type="button"
@@ -196,15 +213,19 @@
 					</button>
 				</div>
 
-				<div class="text-center pb-4">
-					<button type="button" class="btn btn-custom mx-2 btn-lg w-75 shadow-sm">Submit</button>
+				<div
+					class="py-3 px-3 d-flex bg-white fixed-bottom"
+					style="box-shadow: 0 -0.275rem 0.25rem rgba(0, 0, 0, 0.075) !important"
+				>
+					<a href="index/welcome-en.html" class="btn btn-custom btn-lg w-75 shadow-sm">Submit</a>
 					<a
 						href="https://wa.me/+93748418765"
 						target="_blank"
-						class="btn btn-success mx-2 btn-lg w-15 shadow-sm px-4"
+						class="btn btn-lg shadow-sm px-4 btn-custom2"
+						style="width: 20%"
 					>
 						<svg
-							style="width: 26px"
+							style="width: 37px"
 							fill="white"
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 448 512"
@@ -219,12 +240,24 @@
 			</section>
 		</div>
 		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+
+		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="./compiled/flipclock.js"></script>
+
+		<script src="./compiled/jquery.flipper-responsive.js"></script>
+
 		<script src="./assets/script.js"></script>
 	</body>
 </html>

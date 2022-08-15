@@ -1,19 +1,4 @@
-var clock;
-
-$(document).ready(function () {
-	var clock;
-
-	clock = $(".clock").FlipClock({
-		clockFace: "DailyCounter",
-		autoStart: false,
-		callbacks: {
-			stop: function () {
-				$(".message").html("The clock has stopped!");
-			},
-		},
-	});
-
-	clock.setTime(220880);
-	clock.setCountdown(true);
-	clock.start();
+jQuery(function ($) {
+	$("#myFlipper").flipper("init");
 });
+$(document).ready(function () {});
